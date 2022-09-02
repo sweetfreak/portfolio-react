@@ -1,7 +1,7 @@
 
 main {
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 100%;
   padding: 50px 30px;
 }
 :root {
@@ -157,6 +157,7 @@ li {
 
 nav a:hover {
   text-decoration: none;
+  
 }
 
 nav li {
@@ -178,10 +179,7 @@ textarea {
   margin-right: auto;
 }
 
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .space-between {
   justify-content: space-between;
@@ -312,3 +310,52 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+.headerImg {
+  max-width: 5%
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-row-small {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headerImg {
+    max-width: 10%
+  }
+
+  main {
+    padding: 0
+  }
+
+  .about {
+    display: flex;
+  }
+
+}
+
+@media screen and (min-width: 769px){
+  .profile {
+    max-width: 680px;
+    
+    
+  }
+
+  .about {
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+
+ }
+
+

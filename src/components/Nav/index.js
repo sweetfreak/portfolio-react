@@ -8,7 +8,7 @@ function Nav(props) {
         categories = [],
         setCurrentCategory,
         currentCategory,
-        contactSelected,
+        
       } = props;
 
 
@@ -17,10 +17,10 @@ function Nav(props) {
       }, [currentCategory]);
 
     return (
-        <header className="flex-row">
+        <header className="flex-row-small">
             <h1 className="mx-1">
-                <a data-testid="link" href ="/" >
-                <img src={headerImage} alt="Jesse with colors inverted" className="my-1" style={{width: "5%"}} /> Jesse Sheehan
+                <a data-testid="link" href ="/portfolio-react" >
+                <img src={headerImage} alt="Jesse with colors inverted" className="my-1 headerImg" /> Jesse Sheehan
                 </a>
             </h1>
             <nav>
