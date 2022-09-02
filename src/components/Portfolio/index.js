@@ -65,7 +65,7 @@ const Portfolio = () => {
                         key={currentWorks.workType} 
                         onClick={() => {
                         setWorkType("game") 
-                        console.log(workType)
+                        
                         }}
                     >
                         Games
@@ -78,7 +78,7 @@ const Portfolio = () => {
                         key={currentWorks.workType} 
                         onClick={() => {
                         setWorkType("website") 
-                        console.log(workType)
+                        
                         }}
                     >
                         Websites
@@ -87,8 +87,9 @@ const Portfolio = () => {
             </div>
             
                 <div className="flex-row">
-                    {currentWorks.map((work) => (
-                        <li key={currentWorks.name} className="projectCard">
+                    {currentWorks.map((work, i) => (
+                        <li key={currentWorks.name + " " + i} 
+                        className="projectCard">
                             <a href={work.link} target="_blank" rel="noreferrer" key={work.name}>  
                                 <img
                                     src={work.imgSrc}

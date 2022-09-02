@@ -9,7 +9,6 @@ main {
   --secondary: #A86186;
   --tertiary: #84DCCF;
   --light: rgb(223, 224, 226);
-  --fourthiary: rgb(255, 79, 79)  ;
   --dark: #210B2C;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -89,10 +88,12 @@ a {
 
 a:hover, span:hover  {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 a img:hover {
   border: #466DF6 solid 5px;
+  cursor: pointer;
 }
 
 header {
@@ -246,13 +247,15 @@ textarea {
 .projectCard {
  justify-content: center;
   text-align: center;
-  
+  display: flex;
+  margin-bottom: 50px;
+
 }
 
 .img-thumbnail {
+  
   width: auto;
-  height: 300px;
-  /* margin-bottom: 50px; */
+  max-height: 300px;
   cursor: pointer;
 }
 
