@@ -4,7 +4,8 @@ import nogginImage from "../../assets/noggin.png";
 import classPresImage from "../../assets/classPresident.png";
 import foodfestImage from "../../assets/foodfest.png";
 import portfolioOGImage from "../../assets/portfolioOriginal.png";
-import mediaGenImage from "../../assets/mediagenerator.png"
+import mediaGenImage from "../../assets/mediagenerator.png";
+import EZZoom from "../../assets/EZ-Zoom.png"
 
 const Portfolio = () => {
 
@@ -26,6 +27,12 @@ const Portfolio = () => {
         imgSrc: nogginImage,
         workType:"game",
         link: "https://www.noggin.com/"
+    },
+    {
+        name: "EZ-Zoom Company Directory",
+        imgSrc: EZZoom,
+        workType:"website",
+        link: "https://tranquil-plains-33887.herokuapp.com/"
     },
     {
         name: "Media Generator",
